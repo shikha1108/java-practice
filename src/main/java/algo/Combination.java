@@ -20,7 +20,7 @@ public class Combination {
         // orange, grapes
         // banana, grapes
 
-        // Permutation: ordering : 4 x 3 = 12 / 2 = 6
+        // combination: ordering : 4 x 3 = 12 / 2 = 6
         combinations(fruits);
     }
 
