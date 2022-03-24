@@ -9,7 +9,7 @@ public class Permutation {
         letters.add("A");
         letters.add("B");
         letters.add("C");
-        //permutation1(letters);
+        permutation1(letters);
         permutation2(letters);
 
         // Permutation: AA, AB, AC, BA, BB, BC, CA, CB, CC : 3 x 3
@@ -35,6 +35,4 @@ public class Permutation {
             }
         }
     }
-
-
 }
