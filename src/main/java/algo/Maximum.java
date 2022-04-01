@@ -6,11 +6,11 @@ import java.util.List;
 public class Maximum {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
-        numbers.add(50);
-        numbers.add(20);
-        numbers.add(90);
-        numbers.add(40);
-        numbers.add(30);
+//        numbers.add(-50);
+//        numbers.add(-20);
+//        numbers.add(-90);
+//        numbers.add(-40);
+//        numbers.add(-30);
         System.out.println(maximum(numbers));
     }
 
