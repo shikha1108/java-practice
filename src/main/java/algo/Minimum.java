@@ -14,7 +14,7 @@ public class Minimum {
         System.out.println(minimum(numbers));
     }
 
-    private static Integer minimum(List<Integer> nums) {
+    public static Integer minimum(List<Integer> nums) {
         Integer min = nums.get(0);
         for (Integer num : nums) {
             if(num < min) {
