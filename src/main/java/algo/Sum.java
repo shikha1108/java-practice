@@ -16,9 +16,7 @@ public class Sum {
     private static Integer sum(List<Integer> nums){
         Integer sum = 0;
         for (Integer num : nums) {
-            Integer result = sum + num;
-            sum = result;
-//            sum = sum + num;
+            sum = sum + num;
         }
         return sum;
     }
