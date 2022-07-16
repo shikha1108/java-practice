@@ -14,12 +14,12 @@ public class Palindrome {
         for (int i = 0; i < s.length(); i++) {
             Character c = s.charAt(i);
             reverse = c + reverse;
+            if (s.equals(reverse)) {
+                result = true;
+            }
         }
-        if(s.equals(reverse)){
-            result = true;
-        }
-
         return result;
 
     }
 }
+
