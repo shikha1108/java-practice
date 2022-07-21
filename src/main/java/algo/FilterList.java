@@ -18,22 +18,22 @@ public class FilterList {
         numbers.add(20);
         numbers.add(90);
         numbers.add(60);
-//        System.out.println(filter(numbers, 50));
-//        System.out.println(filterByLength(names, 5));
-//        List<String> result1 = filterByName(names,"a");
-//        System.out.println(result1);
+       System.out.println(filter(numbers, 50));
+       System.out.println(filterByLength(names, 5));
+        List<String> result1 = filterByName(names,"a");
+       System.out.println(result1);
         System.out.println(filterByCharacter(names,"a"));
 
 
     }
     private static List<Integer> filter(List<Integer> nums, Integer key) {
         List<Integer> result = new ArrayList<>();
-//        for (int i = 0; i < nums.size(); i++) {
-//            Integer num = nums.get(i);
-//            if(num < key) {
-//                result.add(num);
-//            }
-//        }
+       for (int i = 0; i < nums.size(); i++) {
+            Integer num = nums.get(i);
+            if(num < key) {
+                result.add(num);
+            }
+        }
         for (Integer num : nums) {
             if(num < key) {
                 result.add(num);
