@@ -1,8 +1,9 @@
 package example;
 
-public class Students {
+public class Student {
     String name;
 
     Integer numbers;
+    Integer fees;
 
 }

@@ -27,7 +27,7 @@ public class Combination {
         // orange, grapes
         // banana, grapes
 
-        // combination: ordering : 4 x 3 = 12 / 2 = 6
+        // combination: ordering : 4 x 3 = 12 / 2
         combinations(fruits);
     }
 
