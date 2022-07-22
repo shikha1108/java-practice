@@ -1,4 +1,4 @@
-package algo;
+package example;
 
 public class Students {
     String name;

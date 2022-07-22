@@ -1,4 +1,6 @@
-package algo;
+package example;
+
+import example.Students;
 
 import java.util.ArrayList;
 import java.util.List;
