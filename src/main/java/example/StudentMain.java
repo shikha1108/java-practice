@@ -9,51 +9,37 @@ public class StudentMain {
         Student shikha = new Student();
         shikha.name = "Shikha";
         shikha.numbers = 90;
+        shikha.rollno = 1;
         students.add(shikha);
 
         Student pankaj = new Student();
         pankaj.name = "Pankaj";
         pankaj.numbers = 99;
+        pankaj.rollno = 5;
         students.add(pankaj);
 
         Student ani = new Student();
         ani.name = "Ani";
         ani.numbers = 93;
+        ani.rollno = 9;
         students.add(ani);
 
         Student anu = new Student();
-        anu.name = "Anu";
+        anu.name = "Shikha";
         anu.numbers = 70;
+        anu.rollno = 7;
+
         students.add(anu);
 
-        Student lucky = new Student();
-        lucky.name = "Lucky";
-        lucky.numbers = 85;
-        students.add(lucky);
 
-        Student snowwhite = new Student();
-        snowwhite.name = "Snowwhite";
-        snowwhite.numbers = 20;
-        students.add(snowwhite);
-
-        Student cinderella = new Student();
-        cinderella.name = "Cinderella";
-        cinderella.numbers = 05;
-        students.add(cinderella);
-
-        Student jasmine = new Student();
-        jasmine.name = "Jasmine";
-        jasmine.numbers = 25;
-        students.add(jasmine);
-
-        Student ariel = new Student();
-        ariel.name = "Ariel";
-        ariel.numbers = 15;
-        students.add(ariel);
 
 
         Student result = topper(students);
-        System.out.println(result.name);
+        //System.out.println(result.name);
+        System.out.println(searchRollno(students, 8));
+        System.out.println(searchName(students, "bruno"));
+        System.out.println(searchName(students, "pankaj"));
+        System.out.println(countName(students, "pankaj"));
 
 
     }
@@ -75,5 +61,35 @@ public class StudentMain {
             }
         }
         return failed;
+    }
+    private static Boolean searchRollno(List<Student> students,Integer roll){
+        Boolean result = false;
+        for (Student student : students) {
+            if (student.rollno == roll ){
+                result = true;
+
+            }
+        }
+        return result;
+    }
+    private static Boolean searchName(List<Student> students, String name){
+        Boolean result = false;
+        for (Student student : students) {
+            if (student.name.equalsIgnoreCase(name)){
+                result = true;
+                break;
+            }
+        }
+        return result;
+
+    }
+    private static Integer countName(List<Student> students,String name){
+        Integer result = 0;
+        for (Student student : students) {
+            if (student.name.equalsIgnoreCase(name)){
+                result = result + 1;
+            }
+        }
+        return result;
     }
 }

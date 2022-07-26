@@ -5,5 +5,6 @@ public class Student {
 
     Integer numbers;
     Integer fees;
+    Integer rollno;
 
 }
