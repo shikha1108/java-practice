@@ -4,11 +4,14 @@ public class Palindrome {
     public static void main(String[] args) {
         //NITIN, ANA, BOB, KANAK, SARAS
 
-        System.out.println(palindrome("NITIN"));
-        System.out.println(palindrome("ANU"));
+       // System.out.println(palindrome("NITIN"));
+        //System.out.println(palindrome("ANU"));
+
+        Palindrome palindrome = new Palindrome();
+        System.out.println(palindrome.palindrome("BOB"));
     }
 
-    private static Boolean palindrome(String s) {
+    public  Boolean palindrome(String s) {
         Boolean result = false;
         String reverse = "";
         for (int i = 0; i < s.length(); i++) {

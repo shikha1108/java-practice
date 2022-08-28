@@ -1,12 +1,7 @@
-package example;
+package oop;
 
 public class Student {
     String name;
-
-    Integer numbers;
-    Integer fees;
     Integer rollno;
-
-
-
+    Integer number;
 }
